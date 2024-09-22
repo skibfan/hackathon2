@@ -1,1 +1,1 @@
-Asdgcvnkzxhcvjkakcjv
+npm i knex pg express dotenv bcrypt ejs express-session
