@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Favorite Places</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <header><%- include('partials/headerweather') %></header>
+</head>
+
+<body>
+    <h1>Your Favorite Places</h1>
+    <div id="favorites"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const favorites = <%- JSON.stringify(favorites) %>;
+            getFavorites(favorites);
+        });
+    </script>
+</body>
+<footer><%- include('partials/footer') %></footer>
+</html>
